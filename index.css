@@ -173,3 +173,6 @@ html, body{
   width:100%;
   z-index: 1;
 }
+#welcome{
+  margin-top: 20px;
+}
