@@ -25,7 +25,7 @@ html, body{
 #inner{
   color: #666666;
   font-family: 'Comfortaa', cursive;
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
@@ -142,7 +142,7 @@ html, body{
   margin: 0;
 }
 #hi{
-  margin-top: 350px;
+  margin-top: 200px;
   font-family: 'Comfortaa', cursive;
 }
 .headers{
@@ -169,4 +169,8 @@ html, body{
 #me{
   flex-basis: 350em;
   border-radius: 20%;
+  z-index: 4;
+}
+#girl{
+  width:100%;
 }
