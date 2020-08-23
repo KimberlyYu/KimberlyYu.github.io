@@ -113,33 +113,30 @@ html, body{
       opacity: 0.1;
     }
 }*/
+#ballwithsquirrel{
+  display: inline-block;
+  position: relative;
+  /* margin-top: 10px; */
+}
 #acorn{
   width: 70px;
   height: 70px;
   /* margin: 150px auto; */
-  position: fixed;
-  left: 10%;
+  position: relative;
 }
 #squirrel{
     width: 70px;
     height:70px;
-    left: 6%;
     /* margin: 150px auto; */
-    position: fixed;
+    position: relative;
 }
 #fox{
     width: 70px;
     height:70px;
-    left: 69.5%;
+    left: 74.5%;
+    margin-top: 1px;
     /* margin: 150px auto; */
-    position: fixed;
-}
-#ballwithsquirrel{
-  display: inline-block;
-  position: absolute;
-  top: 10%;
-  padding: 0;
-  margin: 0;
+    position: relative;
 }
 #hi{
   margin-top: 200px;
@@ -173,4 +170,5 @@ html, body{
 }
 #girl{
   width:100%;
+  z-index: 1;
 }

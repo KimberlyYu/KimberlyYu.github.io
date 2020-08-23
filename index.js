@@ -1,8 +1,8 @@
 function moveRight() {
     var elem = document.getElementById("squirrel");
     var elem2= document.getElementById("acorn");
-    var pos = 50;
-    var pos2 = 100;
+    var pos = 10;
+    var pos2 = -15;
     var id = setInterval(frame, 1);
     function frame() {
       if (pos == 900) {
