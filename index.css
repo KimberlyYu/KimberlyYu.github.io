@@ -39,7 +39,6 @@
 }
 .navItems:hover{
     color: #f5b0cb;
-    text-shadow: 0px 0px 10px #afd9ad;
     background: rgba(255,255,255,0.1);
 }
 #landscape2{
@@ -55,7 +54,4 @@
 h1{
     font-family: 'Comfortaa', cursive;
     text-align: center;
-}
-body{
-    background: rgba(197, 247, 188,0.2)
 }
