@@ -120,8 +120,8 @@ html, body{
   /* margin-top: 10px; */
 }
 #acorn{
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   /* margin: 150px auto; */
   position: relative;
 }
@@ -134,7 +134,7 @@ html, body{
 #fox{
     width: 70px;
     height:70px;
-    left: 74.5%;
+    left: 73.35%;
     margin-top: 1px;
     /* margin: 150px auto; */
     position: relative;
