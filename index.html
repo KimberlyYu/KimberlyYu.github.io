@@ -16,6 +16,25 @@
     <title>Kimberly Yu</title>
   </head>
   <body>
+    <script>
+      function moveRight() {
+        var elem = document.getElementById("squirrel");
+        var elem2= document.getElementById("ball");
+        var pos = 50;
+        var pos2 = 100;
+        var id = setInterval(frame,8);
+        function frame() {
+          if (pos == 500) {
+            clearInterval(id);
+          } else {
+            pos+=3;
+            pos2+=3; 
+            elem2.style.left = pos2 + "px"; 
+            elem.style.left = pos + "px"; 
+          }
+        }
+      }
+      </script>
     <!-- page contents -->
     <div id="navWrap">
       <nav id="nav">
@@ -29,8 +48,12 @@
         </ul>
       </nav>
     </div>
-    <div id="">
-
+    <div id="ballwithsquirrel">
+      <img id="squirrel" onmouseenter="moveRight()" src='static/img/squirrel.png'>
+      <span id="ball"></span>
     </div>
+    
+    
+    <div id=""></div>
   </body>
 </html>
