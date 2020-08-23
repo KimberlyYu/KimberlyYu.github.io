@@ -3,9 +3,9 @@ function moveRight() {
     var elem2= document.getElementById("ball");
     var pos = 50;
     var pos2 = 100;
-    var id = setInterval(frame, 3);
+    var id = setInterval(frame, 1);
     function frame() {
-      if (pos == 500) {
+      if (pos == 900) {
         clearInterval(id);
       } else {
         pos+=2;

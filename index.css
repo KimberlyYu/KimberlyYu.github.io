@@ -83,6 +83,13 @@
     margin: 150px auto;
     position: fixed;
 }
+#fox{
+    width: 70px;
+    height:70px;
+    left: 69.5%;
+    margin: 150px auto;
+    position: fixed;
+}
 h1{
     font-family: 'Comfortaa', cursive;
     text-align: center;
