@@ -1,5 +1,13 @@
-#ballwithsquirrel{
+body{
+  /*background:rgb(202, 224, 173, 0.5);*/
+}
+#left{
     display: inline-block;
+    position: fixed;
+}
+#right{
+    display: inline-block;
+    position: fixed;
 }
 #navWrap{
     width: 100%;
@@ -34,6 +42,13 @@
     position: fixed;
     left: 56px;
 }
+#cherry{
+  width:30px; 
+  height:30px;
+  position:fixed;
+  top:12px;
+  left:20px;
+}
 .navItems{
     color: #666666;
     font-family: 'Comfortaa', cursive;
@@ -45,20 +60,10 @@
     color: #f5b0cb;
     background: rgba(255,255,255,0.1);
 }
-#landscape2{
-    width:100%;
-}
-#cherry{
-    width:30px; 
-    height:30px;
-    position:fixed;
-    top:12px;
-    left:20px;
-}
 #ball{
     width: 70px;
     height: 70px;
-    margin: 150px auto;
+    /* margin: 150px auto; */
     position: fixed;
     left: 10%;
     border-radius: 50%;
@@ -76,21 +81,58 @@
       opacity: 0.1;
     }
 }*/
+#acorn{
+  width: 70px;
+  height: 70px;
+  /* margin: 150px auto; */
+  position: fixed;
+  left: 10%;
+}
 #squirrel{
     width: 70px;
     height:70px;
     left: 6%;
-    margin: 150px auto;
+    /* margin: 150px auto; */
     position: fixed;
 }
 #fox{
     width: 70px;
     height:70px;
     left: 69.5%;
-    margin: 150px auto;
+    /* margin: 150px auto; */
     position: fixed;
 }
-h1{
+#ballwithsquirrel{
+  display: inline-block;
+  position: absolute;
+  top: 10%;
+  padding: 0;
+  margin: 0;
+}
+#hi{
+  margin-top: 350px;
+  font-family: 'Comfortaa', cursive;
+}
+.headers{
+  font-size: 38px;
+}
+.paragraphs{
+  font-size: 18px;
+  line-height: 35px;
+}
+#about{
+    position: absolute;
+    margin: 0;
+    margin-top: 400px;
+    margin-left: 10%;
+    padding: 0;
     font-family: 'Comfortaa', cursive;
-    text-align: center;
+    left: 5%;
+    display:flex;
+}
+#meheader{
+  flex-basis: 300em;
+}
+#me{
+  flex-basis: 200em;
 }

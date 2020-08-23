@@ -1,6 +1,6 @@
 function moveRight() {
     var elem = document.getElementById("squirrel");
-    var elem2= document.getElementById("ball");
+    var elem2= document.getElementById("acorn");
     var pos = 50;
     var pos2 = 100;
     var id = setInterval(frame, 1);

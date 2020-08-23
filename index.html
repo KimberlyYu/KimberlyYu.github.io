@@ -17,7 +17,8 @@
   </head>
   <body>
     <script src="index.js"></script>
-    <!-- page contents -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- nav bar -->
     <div id="navWrap">
       <nav id="nav">
         <img id="cherry" src="/static/img/cherry.png">
@@ -30,13 +31,33 @@
         </ul>
       </nav>
     </div>
+    <!--acorn animation-->
     <div id="ballwithsquirrel">
-      <img id="squirrel" onload="moveRight()" src='/static/img/squirrel.png'>
-      <img id="fox" src="/static/img/fox.png">
-      <span id="ball"></span>
+      <div id="right">
+        <img id="fox" src="/static/img/fox.png">
+      </div>
+      <div id="left">
+        <img id="squirrel" onload="moveRight()" src='/static/img/squirrel.png'>
+        <img id="acorn" src="/static/img/acorn.png">
+        <!--<span id="ball"></span>-->
+      </div>
     </div>
-    
-    
-    <div id=""></div>
+    <!--Hello-->
+    <section>
+      <div id="hi" class="container"> 
+        <div class="headers">Hi, my name is Kimberly Yu.</div>
+        <p class="paragraphs">Welcome to my little corner of the world. This is where I showcase my projects, life updates, and a little summary of myself.</p>
+      </div>  
+    </section>
+    <!--About Me-->
+    <section>
+      <div id="about">
+        <div id="meheader"><span class="headers">About Me</span><br><br><span class="paragraphs">I am a high school senior at Arcadia High School. My hobbies include programming, cooking, gardening, digital art, and playing with my cats. I've always been fascinated by machine learning and its many applications, and I'm excited to continue delving deeper.</span></div>
+        <div id="me"><img src="/static/img/me.jpeg"></div>
+      </div>
+    </section>
+
+
+    <footer id="footer"></footer>
   </body>
 </html>
