@@ -16,25 +16,7 @@
     <title>Kimberly Yu</title>
   </head>
   <body>
-    <script>
-      function moveRight() {
-        var elem = document.getElementById("squirrel");
-        var elem2= document.getElementById("ball");
-        var pos = 50;
-        var pos2 = 100;
-        var id = setInterval(frame,8);
-        function frame() {
-          if (pos == 500) {
-            clearInterval(id);
-          } else {
-            pos+=3;
-            pos2+=3; 
-            elem2.style.left = pos2 + "px"; 
-            elem.style.left = pos + "px"; 
-          }
-        }
-      }
-      </script>
+    <script src="index.js"></script>
     <!-- page contents -->
     <div id="navWrap">
       <nav id="nav">
