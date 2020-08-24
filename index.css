@@ -163,11 +163,13 @@ html, body{
 #meheader{
   flex-basis: 400em;
   margin-right: 80px;
+  float: left;
 }
 #me{
   flex-basis: 350em;
   border-radius: 20%;
   z-index: 4;
+  float: left;
 }
 #girl{
   width:100%;
