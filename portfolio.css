@@ -1,0 +1,217 @@
+/* Note below that you can find min and max */
+/* values for width and weight */
+@font-face {
+    font-family: 'Comfortaa', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+    font-display: swap;
+    font-stretch: 75% 100%;
+    font-style: normal;
+    font-weight: 250 900;
+  }
+  
+  :root {
+    /* font stack variables */
+    --font-stack-sans-vf: "Comfortaa", cursive;
+    
+    /* assign font stacks for headings and text */
+    --font-stack-heading: var(--font-stack-sans-vf);
+    --font-stack-body: var(--font-stack-sans-vf);
+  
+    /* breakpoint variables */
+    --bp-small: 25;
+    --bp-medium: 45;
+    --bp-large: 55;
+    --bp-xlarge: 65;
+    
+    /* color variables */
+    
+    --blue-dark: #313161;
+    --blue-lightest: #e1f1ff;
+  
+    --text-color: var(--blue-dark);
+    --background-color: var(--blue-lightest);
+    
+    /* set px value sizes */
+    /* initial px value for text */
+    --rem-px: 16;
+  
+    /* EDIT HERE to set px value sizes */
+    --p-size-s-px: 16;
+    --p-size-l-px: 20;
+    --h1-size-s-px: 40;
+    --h1-size-l-px: 72;
+    --h2-size-s-px: 32;
+    --h2-size-l-px: 48;
+  
+    /* set scale values */
+    
+    /* calcs to create values for the formulas */
+    --p-size-min: calc( var(--p-size-s-px) / var(--rem-px) );
+    --p-size-max: calc( var(--p-size-l-px) / var(--rem-px) );
+    --p-lh-min: 1.3;
+    --p-lh-max: 1.6;
+    
+    /* values to scale across breakpoint range */
+    --p-wdth-min: 90;
+    --p-wdth-max: 100;
+    --p-wght-min: 350;
+    --p-wght-max: 400;
+  
+    /* default starting scale value */
+    --p-wdth: var(--p-wdth-min);
+    --p-wght: var(--p-wght-min);
+  
+    /* calcs to create values for the formulas */
+    --h1-size-min: calc( var(--h1-size-s-px) / var(--rem-px) );
+    --h1-size-max: calc( var(--h1-size-l-px) / var(--rem-px) );
+    --h1-lh-min: 1.05;
+    --h1-lh-max: 1.1;
+    
+    /* values to scale across breakpoint range */
+    --h1-wdth-min: 75;
+    --h1-wdth-max: 85;
+    --h1-wght-min: 700;
+    --h1-wght-max: 225;
+  
+    /* default starting scale value */
+    --h1-wdth: var(--h1-wdth-min);
+    --h1-wght: var(--h1-wght-min);
+  
+    /* calcs to create values for the formulas */
+    --h2-size-min: calc( var(--h2-size-s-px) / var(--rem-px) );
+    --h2-size-max: calc( var(--h2-size-l-px) / var(--rem-px) );
+    --h2-lh-min: 1.05;
+    --h2-lh-max: 1.1;
+    
+    /* values to scale across breakpoint range */
+    --h2-wdth-min: 85;
+    --h2-wdth-max: 100;
+    --h2-wght-min: 575;
+    --h2-wght-max: 675;
+  
+    /* default starting scale value */
+    --h2-wdth: var(--h2-wdth-min);
+    --h2-wght: var(--h2-wght-min);
+  }
+  
+    html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    
+    
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  h1 {
+    font-family: var(--font-stack-heading);
+    /* set low-end scale values for smallest screens */
+    font-size: calc( var(--h1-size-min) * 1rem);
+    line-height: var(--h1-lh-min); 
+    /* JS will scale the next two values dynamically */
+    font-stretch: calc( var(--h1-wdth) * 1%);
+    font-weight: var(--h1-wght);
+  }
+    @media screen and (min-width: 25em) {
+      h1 {
+        /* use formula to scale from low value to high between breakpoints */
+        line-height: calc(( var(--h1-lh-min) * 1em ) + ( var(--h1-lh-max) - var(--h1-lh-min) ) * ((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-xlarge) - var(--bp-small) )));
+        font-size: calc(( var(--h1-size-min) * 1em ) + ( var(--h1-size-max) - var(--h1-size-min) ) * ((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-xlarge) - var(--bp-small) ))); 
+      } 
+    }
+    @media screen and (min-width: 65em) {
+      h1 {
+        /* set high end values to cap scale for largest screens */
+        font-size: calc( var(--h1-size-max) * 1em);
+        font-stretch: calc( var(--h1-wdth-max) * 1%);
+        font-weight: var(--h1-wght-max); 
+        line-height: var(--h1-lh-max); 
+      }
+    }
+  
+  h2 {
+    font-family: var(--font-stack-heading);
+    /* set low-end scale values for smallest screens */
+    font-size: calc( var(--h2-size-min) * 1rem);
+    line-height: var(--h2-lh-min); 
+    /* JS will scale the next two values dynamically */
+    font-stretch: calc( var(--h2-wdth) * 1%);
+    font-weight: var(--h2-wght);
+  }
+    @media screen and (min-width: 25em) {
+      h2 {
+        /* use formula to scale from low value to high between breakpoints */
+        line-height: calc(( var(--h2-lh-min) * 1em ) + ( var(--h2-lh-max) - var(--h2-lh-min) ) * ((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-xlarge) - var(--bp-small) )));
+        font-size: calc(( var(--h2-size-min) * 1em ) + ( var(--h2-size-max) - var(--h2-size-min) ) * ((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-xlarge) - var(--bp-small) ))); 
+      } 
+    }
+    @media screen and (min-width: 65em) {
+      h2 {
+        /* set high end values to cap scale for largest screens */
+        font-size: calc( var(--h2-size-max) * 1em);
+        font-stretch: calc( var(--h2-wdth-max) * 1%);
+        font-weight: var(--h2-wght-max);
+        line-height: var(--h2-lh-max);
+      } 
+    }
+  
+  
+  p {
+    font-family: var(--font-stack-body);
+    /* set low-end scale values for smallest screens */
+    font-size: calc( var(--p-size-min) * 1rem);
+    line-height: var(--p-lh-min); 
+    /* JS will scale the next two values dynamically */
+    font-stretch: calc( var(--p-wdth) * 1%);
+    font-weight: var(--p-wght);
+  }
+    @media screen and (min-width: 25em) {
+      p {
+        /* use formula to scale from low value to high between breakpoints */
+        line-height: calc(( var(--p-lh-min) * 1em ) + ( var(--p-lh-max) - var(--p-lh-min) ) * ((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-xlarge) - var(--bp-small) )));
+        font-size: calc(( var(--p-size-min) * 1em ) + ( var(--p-size-max) - var(--p-size-min) ) * ((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-xlarge) - var(--bp-small) )));
+      }
+    }
+    @media (min-width: 65em) {
+      p {
+        /* set high end values to cap scale for largest screens */
+        font-size: calc( var(--p-size-max) * 1em);
+        font-stretch: calc( var(--p-wdth-max) * 1%);
+        font-weight: var(--p-wght-max);
+        line-height: var(--p-lh-max);
+      }
+    }
+  
+  * + p {
+    margin-top: 1em; 
+  } 
+      
+  
+  .content-container {
+    margin: 2rem auto;
+    /* max-width: 98vw; */
+    max-width: 100vw;
+  }
+    @media (min-width: 45em) {
+      .content-container {
+        /* max-width: 40rem;  */
+        max-width: 50rem;
+      }
+    }
+    @media (min-width: 55em) {
+      .content-container {
+        /* max-width: 42rem;  */
+        max-width: 60rem;
+      }
+    }
+    @media (min-width: 65em) {
+      .content-container {
+        /* max-width: 46rem;  */
+        max-width: 70rem;
+      }
+    }
+  
