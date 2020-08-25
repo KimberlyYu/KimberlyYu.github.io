@@ -25,8 +25,8 @@
     
     /* color variables */
     
-    --blue-dark: #313161;
-    --blue-lightest: #e1f1ff;
+    --blue-dark: #666666;
+    --blue-lightest: white;
   
     --text-color: var(--blue-dark);
     --background-color: var(--blue-lightest);

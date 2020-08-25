@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16x16.png">
@@ -16,22 +17,33 @@
     <title>Kimberly Yu</title>
   </head>
   <body>
-    <script src="index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <img id="girl" src="/static/img/girl.jpg">
     <!-- nav bar -->
-    <div id="navWrap">
+
+    <div class="nav" id="navWrap">
       <nav id="nav">
         <img id="cherry" src="/static/img/cherry.png">
         <ul class="menu">
           <li id="navName">Kimberly Yu</li>
-          <li><a href="#about" class="navItems">about</a></li>
+          <li><a class='dropdown-trigger btn' href='#' data-target='dropdown1' id="icon"><i class="fa fa-bars"></i></a></li>
+          <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="index.html"><span class="dropItems">home</span></a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="portfolio.html"><span class="dropItems">portfolio</span></a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="blog.html"><span class="dropItems">blog</span></a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="contact.html"><span class="dropItems">contact</span></a></li>
+          </ul>
+          <li><a href="index.html" class="navItems">home</a></li>
           <li><a href="portfolio.html" class="navItems">portfolio</a></li>
           <li><a href="blog.html" class="navItems">blog</a></li>
           <li><a href="contact.html" class="navItems">contact</a></li>
         </ul>
       </nav>
     </div>
+
+
     <!--acorn animation-->
     <img id="fox" src="/static/img/fox.png">
     <div id="ballwithsquirrel">
@@ -70,5 +82,14 @@
         <a style="color:#666666" href="mailto:kimberly331yu@gmail.com">kimberly331yu@gmail.com</a>
       </div>
     </footer>
+
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.dropdown-trigger').dropdown();
+        });
+    </script>
   </body>
 </html>

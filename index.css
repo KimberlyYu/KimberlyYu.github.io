@@ -96,6 +96,22 @@ html, body{
     background: rgba(236, 231, 231, 0);
     /*above ^ is where you change the text box shadow around the hover so it wont be there*/
 }
+#icon{
+    color: #666666;
+    background: rgba(236, 231, 231, 0);
+    box-shadow: none;
+    border-radius:0;
+}
+#icon:hover{
+    color: #f5b0cb;
+    background: rgba(236, 231, 231, 0);
+}
+.dropItems{
+  color: #666666;
+  font-family: 'Comfortaa', cursive;
+  text-decoration: none;
+  font-size: 12px;
+}
 #ball{
     width: 70px;
     height: 70px;
