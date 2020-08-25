@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Page Title</title>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="blog.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,32 +16,32 @@
     <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-<img id="girl2" src="/static/img/girl2.jpg">
+    <div class="nav" id="navWrap">
+        <nav id="nav">
+          <img id="cherry" src="/static/img/cherry.png">
+          <ul class="menu">
+            <li id="navName">Kimberly Yu</li>
+            <li><a class='dropdown-trigger btn' href='#' data-target='dropdown1' id="icon"><i class="fa fa-bars"></i></a></li>
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="index.html"><span class="dropItems">home</span></a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="portfolio.html"><span class="dropItems">portfolio</span></a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="blog.html"><span class="dropItems">blog</span></a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="contact.html"><span class="dropItems">contact</span></a></li>
+            </ul>
+            <li><a href="index.html" class="navItems">home</a></li>
+            <li><a href="portfolio.html" class="navItems">portfolio</a></li>
+            <li><a href="blog.html" class="navItems">blog</a></li>
+            <li><a href="contact.html" class="navItems">contact</a></li>
+          </ul>
+        </nav>
+      </div>
 
-<div class="nav" id="navWrap">
-    <nav id="nav">
-      <img id="cherry" src="/static/img/cherry.png">
-      <ul class="menu">
-        <li id="navName">Kimberly Yu</li>
-        <li><a class='dropdown-trigger btn' href='#' data-target='dropdown1' id="icon"><i class="fa fa-bars"></i></a></li>
-        <ul id='dropdown1' class='dropdown-content'>
-          <li><a href="index.html"><span class="dropItems">home</span></a></li>
-          <li class="divider" tabindex="-1"></li>
-          <li><a href="portfolio.html"><span class="dropItems">portfolio</span></a></li>
-          <li class="divider" tabindex="-1"></li>
-          <li><a href="blog.html"><span class="dropItems">blog</span></a></li>
-          <li class="divider" tabindex="-1"></li>
-          <li><a href="contact.html"><span class="dropItems">contact</span></a></li>
-        </ul>
-        <li><a href="index.html" class="navItems">home</a></li>
-        <li><a href="portfolio.html" class="navItems">portfolio</a></li>
-        <li><a href="blog.html" class="navItems">blog</a></li>
-        <li><a href="contact.html" class="navItems">contact</a></li>
-      </ul>
-    </nav>
-  </div>
+<img id="dangocat" src="/static/img/dangocat.png">
 
-  <footer id="footer">
+<footer id="footer">
     <div id="inner">
       <span>&copy; 2020 Kimberly Yu</span>
       <div id="socials">
@@ -55,12 +55,13 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
-      $(document).ready(function(){
-        $('.dropdown-trigger').dropdown();
-      });
-  </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.dropdown-trigger').dropdown();
+        });
+    </script>
+
 </body>
 </html>

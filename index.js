@@ -5,7 +5,7 @@ function moveRight() {
   var pos2 = -15;
   var id = setInterval(frame, 1);
   function frame() {
-    if (pos == 900) {
+    if (pos == 890) {
       clearInterval(id);
     } else {
       pos+=2;

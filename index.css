@@ -33,14 +33,14 @@ html, body{
 .socials{
   width:40px;
 }
-#left{
+/* #left{
     display: inline-block;
     position: fixed;
 }
 #right{
     display: inline-block;
     position: fixed;
-}
+} */
 #navWrap{
     width: 100%;
     height: 3.75em;
