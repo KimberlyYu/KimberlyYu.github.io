@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,82 +14,124 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script src="index.js" defer></script>
     <title>Kimberly Yu</title>
   </head>
-  <body>
-    <img id="girl" src="/static/img/bothcats.jpg">
-    <!-- nav bar -->
 
-    <div class="nav" id="navWrap">
+  <body>
+   <div id="page-container">
+    <div id="content-wrap">
+
+      <img id="cover_image"  src="/static/img/Lonely.png">
+
+      <div id="navWrap">
+        <nav class="navbar">
+          <div class="navtitle">Kimberly Yu</div>  
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navbar_links">
+            <ul>
+              <li><a href="index.html">about</a></li>
+              <li><a href="portfolio3.html">portfolio</a></li>
+              <li><a href="catphotos.html">cat photos</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>  
+
+    <!-- nav bar -->
+  <!--<div class="nav" id="navWrap">
       <nav id="nav">
-        <img id="cherry" src="/static/img/cherry.png">
+        <div id="hamburger">
+          <a class='dropdown-trigger btn' href='#' data-target='dropdown1' id="icon"><i class="fa fa-bars"></i></a>
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="index.html"><span class="dropItems">home</span></a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="portfolio.html"><span class="dropItems">portfolio</span></a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="#"><span class="dropItems">resume</span></a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="#"><span class="dropItems">contact</span></a></li>
+            </ul>
+        </div>
+        
+        
+        <img id="cherry" src="/static/img/whiteflower.png">
+        (need to comment above line)
+
         <ul class="menu">
-          <li id="navName">Kimberly Yu</li>
-          <li><a class='dropdown-trigger btn' href='#' data-target='dropdown1' id="icon"><i class="fa fa-bars"></i></a></li>
-          <ul id='dropdown1' class='dropdown-content'>
-            <li><a href="index.html"><span class="dropItems">home</span></a></li>
-            <li class="divider" tabindex="-1"></li>
-            <li><a href="#"><span class="dropItems">portfolio</span></a></li>
-            <li class="divider" tabindex="-1"></li>
-            <li><a href="#"><span class="dropItems">cat photos</span></a></li>
-            <li class="divider" tabindex="-1"></li>
-            <li><a href="#"><span class="dropItems">contact</span></a></li>
-          </ul>
-          <li><a href="#" class="navItems">home</a></li>
-          <li><a href="#" class="navItems">portfolio</a></li>
-          <li><a href="#" class="navItems">cat photos</a></li>
+          <div id="navName">Kimberly Yu</div>
+          <div id="navigation">
+          <li><a href="index.html" class="navItems">home</a></li>
+          <li><a href="portfolio.html" class="navItems">portfolio</a></li>
+          <li><a href="#" class="navItems">resume</a></li>
           <li><a href="#" class="navItems">contact</a></li>
+        </div>
         </ul>
       </nav>
-    </div>
-
-
+    </div>-->
+  
     <!--acorn animation-->
-    <img id="fox" src="/static/img/fox.png">
+    <!--<img id="fox" src="/static/img/fox.png">
     <div id="ballwithsquirrel">
         <img id="squirrel" onmouseenter="moveRight()" src='/static/img/squirrel.png'>
         <img id="acorn" src="/static/img/acorn.png">
-        <!--<span id="ball"></span>-->
-    </div>
+    </div>-->
+
     <!--Hello-->
     <div id="container">
     <div id="main">
     <section>
       <div id="hi" class="container"> 
-        <div class="headers">Hi, my name is Kimberly Yu.</div>
-        <p id="welcome" class="paragraphs">Welcome to my little corner of the world. This is a creative outlet for me to display my projects, life updates, and a little summary of myself.</p>
+        <div class="headers" style="text-shadow: 2.5px 1px 3px #666666;">Hi, my name is Kimberly.</div>
+        <p id="welcome" class="paragraphs">From equalizing coding education opportunities, broadening access to coding technologies, to promoting trustworthy and interpretable AI models, I hope to become a programmer that helps a wider range of people be empowered by computer science.  </p>
       </div>  
     </section>
+    
+      <a href="portfolio3.html" target="_blank">
+        <button type="button" id="pinkbutton">featured works</button>
+      </a>
+
     <!--About Me-->
     <section>
       <div id="about">
-        <div id="meheader"><span class="headers">About Me</span><br><br><span class="paragraphs">I am a high school senior at Arcadia High School. My hobbies include programming, cooking, gardening, digital art, and playing with my cats.</span></div>
-        <div id="me"><img src="/static/img/me.jpeg"></div>
+        <div id="meheader"><span style="text-shadow: 2.5px 1px 3px #666666;" class="headers">About Me</span><br><br><span class="paragraphs">I am a high school senior at Arcadia High School. My hobbies include programming, cooking, digital art, and playing with my cats. By the way, the picture above was drawn digitally by me!</span></div>
+        <div id="me"><img style="height: 250px; border-radius: 40px; box-shadow: 5px 5px 5px gray;" src="/static/img/me.jpeg"></div>
       </div>
     </section>
+
     </div>
+  </div>
+
     <!--Footer-->
     <footer id="footer">
-      <div id="inner">
+      <div id="inner_footer">
         <span>&copy; 2020 Kimberly Yu</span>
         <div id="socials">
           <a href="https://www.linkedin.com/in/kimberly-y-6969aa1a4/"><img class="socials" src="/static/img/linkedin.png"></a>
           <a href="https://www.instagram.com/kmberlyyu/"><img class="socials" src="/static/img/instagram.png"></a>
           <a href="https://github.com/KimberlyYu"><img class="socials" src="/static/img/github.png"></a>
           <a href="https://www.facebook.com/kimberly.yu.982"><img class="socials" src="/static/img/facebook.png"></a>
-          <a href="spotify:user:kimmy8588"><img class="socials" src="/static/img/spotify.png"></a>
+          <!--<a href="spotify:user:kimmy8588"><img class="socials" src="/static/img/spotify.png"></a>-->
         </div>
-        <a style="color:#666666" href="mailto:kimberly331yu@gmail.com">kimberly331yu@gmail.com</a>
+        <a id="email" style="color:#666666" href="mailto:kimberly331yu@gmail.com">kimberly331yu@gmail.com</a>
       </div>
     </footer>
 
-    <script src="index.js"></script>
+  </div> 
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
     <script>
         $(document).ready(function(){
           $('.dropdown-trigger').dropdown();
         });
     </script>
+  -->
+
   </body>
 </html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- metadata elements -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="portfolio3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="portfolio3.js" defer></script>
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+ 
+      <!--https://www.youtube.com/watch?v=wOrKQ3Plojs&ab_channel=DezignerBay
+        https://www.youtube.com/watch?v=KFUPg7IpwRg&ab_channel=Codegrid-->
+        <div id="page-container">
+        
+              <div id="navWrap">
+                <nav class="navbar">
+                  <div class="navtitle">Kimberly Yu</div>  
+                  <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </a>
+                  <div class="navbar_links">
+                    <ul>
+                      <li><a href="index.html">about</a></li>
+                      <li><a href="catphotos.html">cat photos</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>  
+        
+   
+    <style>
+        .carousel-item{
+            height: 32rem;
+            background: #000;
+            color: rgba(255, 255, 255, 0.945);
+            position: relative;
+            background-position: center;
+            background-size: cover;
+        }
+        .container{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding-bottom: 50px;
+        }
+        .overlay-image{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.6;
+        }
+    </style>
+
+    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <div class="overlay-image" style="background-image: url(/static/img/AmbientFlix.png);"></div>    
+        <div class="container">
+            <div style="color:rgba(18, 18, 117,0.945); background-color: rgba(255, 255, 255, 0.61); border-radius: 15px; padding-left: 8px; padding-right: 8px; padding-top: 8px;">
+                <h1>AmbientFlix - Codelabs Internship with Netflix</h1>
+                <p>
+                    Under the mentorship of two Netflix senior software engineers, Ed Bukoski and Joel Brinkman, 
+                    I worked with 5 other members to produce a movie recommendation system based on the user's ambient environment—weather, 
+                    news, Spotify music, Twitter feed, location, and soon, Yelp. Accepted to the Advanced Track meant for college students as a high school student.
+                </p>
+            </div>
+            <a href="https://github.com/ambientflix" class="btn btn-lg btn-primary" style="background-color: rgba(36, 34, 155, 0.966) ;border-color: rgba(36, 34, 155, 0.945);">
+                Github Repo
+            </a>          
+        </div>
+            </div>  
+            <div class="carousel-item">
+            <div class="overlay-image" style="background-image: url(/static/img/arcadiaad.png);"></div> 
+        <div class="container">
+            <div style="color: rgba(112, 3, 3, 0.945); background-color:rgba(243, 240, 240, 0.842); border-radius: 15px; padding-left: 8px; padding-right: 8px; padding-top: 8px;">
+                <h1>Arcadia High Mobile App</h1>
+                <p>
+                    After almost a year of work, the <a href="https://apps.apple.com/us/app/arcadia-high-mobile/id1305220468">AHS Mobile App</a> 
+                    was successfully launched on August 13, 2020. The newly redesigned app provides Arcadia students, parents, and staff access to important school information and resources. 
+                    Currently, we have 775 daily users and put out 30 articles every week combined with each article's own push notifications. The front-end of the iOS app was built using Swift and Obj-C while the Android app was made with Java. We implemented a personal barcode, unique to each student, expediting all teachers' daily routines of signing students in and out of class. There's also an added benefit of maintaining a smaller carbon footprint by eliminating the use of plastic for ID cards.
+                </p>
+            </div>
+            <a href="https://github.com/richardwei6/AHS2020app" class="btn btn-lg btn-primary" style="background-color: rgba(112, 3, 3, 0.945) ;border-color: rgba(112, 3, 3, 0.945);">
+                Github Repo
+            </a>          
+        </div>
+            </div>  
+            <div class="carousel-item">
+                <div class="overlay-image" style="background-image: url(/static/img/contenteditingwebsite.png);"></div>
+                <div class="container">
+                    <h1>Arcadia High Mobile Content Editing Website</h1>
+                    <p>
+                        In order to input articles, remove articles, and send notifications to the user's phone, we needed a backend. 
+                        Thus, my twin sister and I created the Content Editing Website using html, css, and javascript. We used Firebase's authentication, 
+                        hosting, and notification services to sign users in and out, deploy and host our website, and send push notifications to the many people in Arcadia who use the app.
+                    </p>
+                    <a href="https://github.com/emilybelleyu/AHSWebsite" class="btn btn-lg btn-primary" style="background-color: rgba(148, 3, 3, 0.945) ;border-color: rgba(148, 3, 3, 0.945);">
+                        Github Repo
+                    </a>          
+                </div>
+            </div>  
+            <div class="carousel-item">
+                <div class="overlay-image" style="background-image: url(/static/img/housingipynb.png);"></div>
+                <div class="container">
+                    <div style="color: rgb(255, 255, 255); background-color:rgba(119, 118, 118, 0.85); border-radius: 15px; padding-left: 8px; padding-right: 8px; padding-top: 8px;">
+                        <h1>UCSC COSMOS - Machine Learning and Natural Language Processing Cluster</h1>
+                        <p>
+                            Under professors Narges Norouzi and Snigdha Chaturvedi, I worked with 3 other members to predict 
+                            the prices of homes with 28 different price-relative features in Ames, Iowa using Multivariate Linear 
+                            Regression. Gradient Descent was used to get closer to the local minimum. Had an accuracy of 81% after 1250 epochs.
+                        </p>
+                    </div>
+                    <a href="" class="btn btn-lg btn-primary" style="background-color: rgba(91, 19, 133, 0.945);border-color:  rgba(91, 19, 133, 0.945);">
+                        Github Repo
+                    </a>          
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="overlay-image" style="background-image: url(/static/img/Lonely.png);"></div>
+                <div class="container">
+                    <h1>kimberlyyu.github.io</h1>
+                    <p>
+                        One of my projects is this very website! I started this personal website as a way to destress 
+                        and improve my coding skills. While working on this project, I realized how creative programming 
+                        can be. Not only can I put my artwork as images in this website, but I can also test my creative 
+                        limits through the versatility and endless possibilities of html, css, and javascript!
+                    </p>
+                    <a href="https://github.com/KimberlyYu/KimberlyYu.github.io" class="btn btn-lg btn-primary" style="background-color: rgba(181, 206, 252, 0.945);border-color: rgba(181, 206, 252, 0.945);">
+                        Github Repo
+                    </a>          
+                </div>
+            </div>  
+        </div>
+        <a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+            <span class="sr-only">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a href="#myCarousel" class="carousel-control-next" role="button" data-slide="next">
+            <span class="sr-only">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </div>
+
+
+  
+
+
+
+
+
+<!--Content Wrapper-->    
+
+    <!--Footer-->
+    <footer id="footer">
+      <div id="inner_footer">
+        <span>&copy; 2020 Kimberly Yu</span>
+        <div id="socials">
+          <a href="https://www.linkedin.com/in/kimberly-y-6969aa1a4/"><img class="socials" src="/static/img/linkedin.png"></a>
+          <a href="https://www.instagram.com/kmberlyyu/"><img class="socials" src="/static/img/instagram.png"></a>
+          <a href="https://github.com/KimberlyYu"><img class="socials" src="/static/img/github.png"></a>
+          <a href="https://www.facebook.com/kimberly.yu.982"><img class="socials" src="/static/img/facebook.png"></a>
+          <!--<a href="spotify:user:kimmy8588"><img class="socials" src="/static/img/spotify.png"></a>-->
+        </div>
+        <a id="email" style="color:#666666" href="mailto:kimberly331yu@gmail.com">kimberly331yu@gmail.com</a>
+      </div>
+    </footer>
+
+  </div> 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  </body>
+</html>

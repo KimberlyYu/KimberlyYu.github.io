@@ -1,9 +1,10 @@
 *{
-  margin:0;
-  padding:0;
+  box-sizing: border-box;
 }
 html, body{
   height: 100%;
+  margin:0;
+  padding:0;
 }
 #container{
   min-height: 100%;
@@ -12,37 +13,148 @@ html, body{
   overflow:auto;
   padding-bottom: 100px;
 }
-#footer{
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+#cover_image{
+  position: relative;
+  width:100%;
+  z-index: 1;
+}
+#navWrap{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.navbar{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Comfortaa', cursive;
+  background-color: rgba(255,255,255,0.3);
+  box-shadow: 4px 1px 4px gray;
+  height: 3.75em;
+}
+.navtitle{
+  font-size: 1.5rem;
+  margin: 1.5rem;
+  color: #666666;
+}
+.navbar_links ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 1.15rem;
+}
+.navbar_links li{
+  list-style: none;
+}
+.navbar_links li a:hover{
+  color: #83afbc;
+}
+.navbar_links li a{
+  text-decoration: none;
+  color: #666666;
+  padding: 2.5rem;
+  display: block;
+}
+.toggle-button{
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar{
+  height: 2px;
+  width: 90%;
+  background-color: #666666;
+  border-radius: 10px;
+}
+@media (max-width: 800px){
+  .toggle-button{
+    display: flex;
+  }
+  .navbar_links{
+    display: none;
+    width: 100%;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar_links ul{
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar_links li{
+    text-align: center;
+    background-color: #d7f0f89d;
+  }
+  .navbar_links li a{
+    padding: .75rem 1rem;
+  }
+  .navbar_links.active{
+    display: flex;
+  }
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
   border-top: 1px solid rgba(255,255,255,0.5);
   background-color: rgba(255,255,255,0.5);
-  position:relative;
-  bottom:0;
-  /* margin-top: 750px; */
-  margin-top: 80%;
   height:100px;
   clear: both;
   box-shadow: 0 -5px 5px -5px #333;
 }
-#inner{
+#inner_footer{
   color: #666666;
   font-family: 'Comfortaa', cursive;
-  margin-top: 30px;
+  margin-top: 2%;
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
+  font-size: 2.5vmin;
+}
+#inner_footer a{
+  text-decoration: none;
+}
+#inner_footer a:hover{
+  color: #eeb9c7;
+  text-shadow: 2px 1px 4px #eeb9c7;
 }
 .socials{
-  width:40px;
+  /*width: 40px;*/
+  width: 5.5vmin;
+  height: 5.5vmin;
 }
-/* #left{
-    display: inline-block;
-    position: fixed;
+.socials:hover{
+  box-shadow: 3px 1px 4px #eeb9c7;
 }
-#right{
-    display: inline-block;
-    position: fixed;
-} */
-#navWrap{
+/*#footer{
+  border-top: 1px solid rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.5);
+  position:relative;
+  bottom:0;
+  margin-top: 40%;
+  height:100px;
+  clear: both;
+  box-shadow: 0 -5px 5px -5px #333;
+}*/
+
+/*#navWrap{
     width: 100%;
     height: 3.75em;
     background-color: rgba(255,255,255,0.3);
@@ -62,12 +174,19 @@ html, body{
     margin: 0 auto;
     z-index: 999;
 }
+
+#hamburger{
+    position: fixed;
+    margin: auto;  
+    left:2%;
+
+}
 .menu{
     min-width: 1000px;
     position: relative;
     width: 100%;
     height: 40px;
-    left: 350px;
+    left: 25%;
     max-width: 1500px;
     margin: 0 auto;
 }
@@ -76,7 +195,7 @@ html, body{
     font-family: 'Comfortaa', cursive;
     text-decoration: none;
     position: fixed;
-    left: 56px;
+    left: 8%;
 }
 #cherry{
   width:30px; 
@@ -95,8 +214,10 @@ html, body{
 .navItems:hover{
     color: #f5b0cb;
     background: rgba(236, 231, 231, 0);
-    /*above ^ is where you change the text box shadow around the hover so it wont be there*/
+    need to comment this --> above ^ is where you change the text box shadow around the hover so it wont be there
 }
+*/
+
 #icon{
     color: #666666;
     background: rgba(236, 231, 231, 0);
@@ -160,24 +281,31 @@ html, body{
     position: relative;
 }
 #hi{
-  margin-top: 200px;
+  margin-top: 2%;
+  top:2%;
   font-family: 'Comfortaa', cursive;
+  margin-left: 15%;
 }
 .headers{
-  font-size: 38px;
+  /*font-size: 38px;*/
+  font-size: 7vmin;
 }
 .paragraphs{
-  font-size: 18px;
-  line-height: 35px;
+  /*font-size: 18px;
+  line-height: 35px;*/
+  font-size: 2.5vmin;
+  line-height: 5.5vmin;
 }
 #about{
-    position: absolute;
+    position: relative;
     margin: 0;
-    margin-top: 300px;
-    margin-left: 10%;
+    margin-top: 18%;
+    margin-left: 14.5%;
+    margin-bottom: 8%;
+    margin-right: 6%;
     padding: 0;
     font-family: 'Comfortaa', cursive;
-    left: 5%;
+    /*left: 5%;*/
     display:flex;
 }
 #meheader{
@@ -191,10 +319,35 @@ html, body{
   z-index: 4;
   float: left;
 }
-#girl{
-  width:100%;
-  z-index: 1;
-}
 #welcome{
-  margin-top: 20px;
+  margin-top: 3.5%;
+  margin-right: 15%;
 }
+
+#pinkbutton{
+  position: absolute;
+  font-size: 2vmin;
+  background-color: #FFC2D3;
+  font-family: Comfortaa;
+  color:white;
+  border:none !important;
+  outline:none !important;
+  box-shadow: 2px 2px 2px #ce91a9;
+  left:15%;
+  margin-right: 0.5em;
+  margin-top: 2em;
+  border-radius: 4.5px;
+  width: 20vmin;
+  height: 5vmin;
+  cursor: pointer;
+}
+#pinkbutton:hover{
+    border:none !important;
+    outline:none !important;
+    background-color: #eeb9c7 !important;
+}
+.buttons {
+  display: flex;
+  align-self: right;
+}
+

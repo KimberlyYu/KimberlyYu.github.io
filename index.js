@@ -1,4 +1,11 @@
-function moveRight() {
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar_links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+
+/*function moveRight() {
   var elem = document.getElementById("squirrel");
   var elem2= document.getElementById("acorn");
   var pos = 10;
@@ -13,11 +20,5 @@ function moveRight() {
       elem2.style.left = pos2 + "px"; 
       elem.style.left = pos + "px"; 
     }
-    //for(var i = pos; i<900; i+=5){
-    //  elem.style.left = i + "px";
-    //}
-    //for(var i = pos2; i<950; i+=5){
-    //  elem2.style.left = i + "px";
-    //}
   }
-}
+}*/
