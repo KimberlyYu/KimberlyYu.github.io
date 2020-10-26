@@ -56,6 +56,7 @@ html, body{
     letter-spacing: 2px;
     margin: 0 auto;
     z-index: 999;
+    
 }
 #hamburger{
     position: fixed;
@@ -78,6 +79,7 @@ html, body{
     text-decoration: none;
     position: fixed;
     left: 8%;
+    font-size: 1.15rem;
 }
 .navItems{
     color: #666666;
@@ -85,6 +87,7 @@ html, body{
     text-decoration: none;
     width: 200px;
     height: 40px;
+    font-size: 1rem;
 }
 .navItems:hover{
     color: #f5b0cb;

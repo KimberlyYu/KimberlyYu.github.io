@@ -42,7 +42,7 @@ html, body{
   height: 3.75em;
 }
 .navtitle{
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   margin: 1.5rem;
   color: #666666;
 }
@@ -50,7 +50,7 @@ html, body{
   margin: 0;
   padding: 0;
   display: flex;
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 .navbar_links li{
   list-style: none;
